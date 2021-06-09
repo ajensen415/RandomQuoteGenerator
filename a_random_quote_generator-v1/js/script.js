@@ -7,7 +7,7 @@ project 1 - A Random Quote Generator
   // Check the "Project Resources" section of the project instructions
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-//
+//Array of objects containing different quotes & their source; some contain year or citation as well. 
 const quotes = [
   {
     quote: "Some cause happiness wherever they go, others whenever they go.",
@@ -35,22 +35,21 @@ const quotes = [
   }
 ]
 
-//console.log(quotes);
-
-
 /***
  * `getRandomQuote` function
 ***/
 
+//function to pull a random quote from the above array. 
 function getRandomQuote() {
   const randomNumber = Math.floor( Math.random() * quotes.length);
   return quotes[randomNumber];
 }
 
-
 /***
  * `printQuote` function
 ***/
+
+//function to input random quotes to the HTML. 
 function printQuote() {
   let randomQuote = getRandomQuote();
   let quoteParagraph = `<p class= "quote"> ${randomQuote.quote} </p>`;
@@ -58,15 +57,12 @@ function printQuote() {
   if (randomQuote.citation) {
     sourceParagraph += `<span class="citation"> ${randomQuote.citation} </span>`
   } 
-  
   if (randomQuote.year) {
     sourceParagraph += `<span class="year"> ${randomQuote.year} </span>`
   }
   sourceParagraph += '</p>'
   document.getElementById("quote-box").innerHTML=quoteParagraph + sourceParagraph;
 }
-
-//console.log(getRandomQuote());
 
 
 /***
