@@ -7,9 +7,7 @@ project 1 - A Random Quote Generator
   // Check the "Project Resources" section of the project instructions
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-/*** 
- * `quotes` array 
-***/
+//
 const quotes = [
   {
     quote: "Some cause happiness wherever they go, others whenever they go.",
@@ -45,7 +43,7 @@ const quotes = [
 ***/
 
 function getRandomQuote() {
-  const randomNumber = Math.floor( Math.random() * 5);
+  const randomNumber = Math.floor( Math.random() * quotes.length);
   return quotes[randomNumber];
 }
 
