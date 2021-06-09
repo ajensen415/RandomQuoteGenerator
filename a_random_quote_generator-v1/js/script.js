@@ -24,12 +24,12 @@ const quotes = [
     source: 'Will Ferrell',
   },
   {
-    quote: "There is no sunrise so beautiful that it is worth waking me up to see it.",
+    quote: "There is no sunrise so beautiful that is worth waking me up to see it.",
     source: 'Mindy Kaling',
     citation: 'Is Everyone Hanging Out Without Me',
   },
   {
-    quote: "No man has a good enugh memory to be a successfuly liar.",
+    quote: "No man has a good enough memory to be a successfull liar.",
     source: 'Abraham Lincoln',
     year: 1860,
   }
