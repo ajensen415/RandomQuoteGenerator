@@ -55,7 +55,7 @@ function getRandomQuote() {
 ***/
 function printQuote() {
   let randomQuote = getRandomQuote();
-  let quoteParagraph = `<p class= "quotes"> ${randomQuote.quote} </p>`;
+  let quoteParagraph = `<p class= "quote"> ${randomQuote.quote} </p>`;
   let sourceParagraph = `<p class=""source"> ${randomQuote.source}  `;
   if (randomQuote.citation) {
     sourceParagraph += `<span class="citation"> ${randomQuote.citation} </span>`
