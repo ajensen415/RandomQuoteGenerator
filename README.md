@@ -8,6 +8,7 @@ Project Requirements:
 Create an array of JS objects to hold the data for the quotes.
 
 Each quote should have the following properties:
+
  -A quote property which contains a string: the text of the quote to display on the page.
  
  -A source property which contains a string identifying the creator of the quote.
@@ -18,11 +19,13 @@ Each quote should have the following properties:
  
 
 Create a function named getRandomQuote which:
+
  -selects a random quote object from the quotes array
  
  -returns the randomly selected quote objects
  
 Create a function named printQuote which follows these rules:
+
  -printQuote calls the getRandomQuote function and stores the returned quote object in a variable.
  
  -printQuote constructs a string using the different properties of the quote object using the provided HTML template.
