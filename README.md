@@ -3,7 +3,7 @@ Techdegree Project 1: Random Quote Generator
 
 https://ajensen415.github.io/RandomQuoteGenerator/
 
-Project Requirements
+Project Requirements:
 
 Create an array of JS objects to hold the data for the quotes.
 
